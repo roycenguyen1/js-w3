@@ -16,6 +16,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 5rem;
 }
 
 h1,
@@ -29,7 +31,7 @@ h4 {
   width: 30%;
 }
 
-#hamburger {
+.hamburger {
   margin-top: 3rem;
   position: relative;
   width: 30px;
@@ -113,6 +115,18 @@ h4 {
 
   &.active {
     .line1 {
+      top: 11px;
+      width: 100%;
+      transform: rotate(-45deg);
+    }
+
+    .line2 {
+      transform: translateX(15px);
+      opacity: 0;
+    }
+    .line3 {
+      top: 11px;
+      bottom: auto;
       transform: rotate(45deg);
     }
   }
